@@ -2,8 +2,12 @@
 # Bank Customer Churn Prediction Analysis
 
 This project involves analyzing customer data from a bank to predict churn using machine learning models. The dataset includes demographic, financial, and engagement attributes of customers, enabling insights into factors influencing their decision to stay or exit. The analysis was conducted in Google Colab.
-View Notebook
+The Data used in this project can be found [here](https://mavenanalytics.io/data-playground)
 
+[View Notebook](https://github.com/mwang-cmn/Bank-Customer-Churn-Prediction/blob/main/Banking_Churn_Prediction.ipynb)
+
+## Problem Statement
+Fit a model that will classify customers who will churn and those who are retained.
 ### Objectives
 - **Predict Customer Churn**: Develop models to identify customers at risk of leaving the bank.
 - **Feature Importance Analysis**: Determine key features driving churn.
