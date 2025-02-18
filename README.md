@@ -13,21 +13,23 @@ Fit a model that will classify customers who will churn and those who are retain
 - **Feature Importance Analysis**: Determine key features driving churn.
 - **Model Comparison**: Evaluate the performance of Logistic Regression and Random Forest classifiers.
 
-### Key Findings
-- **Model Performance**: The Random Forest classifier outperformed Logistic Regression with an AUC of 0.87, indicating stronger predictive power.
-- **Top Predictors**: *Age*, *Number of Products*, and *Balance* emerged as the most significant features influencing churn.
+The **Random Forest model** achieved an **AUC score of 0.817**, indicating superior discriminative power and stability across various classification thresholds. Its smoother ROC curve suggests consistent performance, making it a robust ch
+- The **Random Forest model** achieved an **AUC score of 0.817**, indicating superior discriminative power and stability across various classification thresholds. Its smoother ROC curve suggests consistent performance, making it a robust choice for this predictive task.
+  
+- The **Logistic Regression model**, while performing decently with an AUC score of **0.78**, showed more fluctuations in its ROC curve, which suggests greater sensitivity to certain decision thresholds.
+
+- **Hyperparameter Tuning**: During the **Random Search CV** and **Grid Search CV** processes, the Random Forest model was further optimized, which led to improvements in its performance. Random Search CV allowed for broader exploration, identifying promising parameters faster, while Grid Search CV refined the search, exhaustively evaluating all combinations within the hyperparameter grids.
 
 ### Recommendations for Customer Retention:
-1. Targeted Marketing: Prioritize retention efforts for older customers and those with fewer products.
-2. Personalized Offers: Tailor offers and incentives based on customer balance, credit score, and estimated salary.
-3. Enhanced Customer Experience: Focus on improving customer satisfaction and engagement, especially for active members and long-tenure customers.
-4. Product Bundling: Consider bundling products to increase customer value and reduce churn.
-5. Financial Incentives: Offer targeted discounts, rewards, or loyalty programs to retain high-value customers.
-6. Customer Segmentation: Segment customers based on features like age, tenure, and product usage to implement more effective retention strategies.
 
-### Tools Used
-- **Python**, **scikit-learn** for modeling
-- **Random Search CV** and **Grid Search CV** for hyperparameter tuning
-- **Matplotlib**, **Seaborn** for data visualization
+1. **Targeted Marketing**: Focus on retention efforts for **older customers** and those with **fewer products**. Since Age and Product Count are significant features, these customers might need additional incentives or engagement to stay.
 
-This project showcases the process of data preprocessing, model training, hyperparameter tuning, and evaluation to deliver actionable insights for customer retention.
+2. **Personalized Offers**: Create tailored offers for customers based on their **credit score**, and **estimated salary**. High-value customers with low churn probability should be rewarded with loyalty programs.
+
+3. **Enhanced Customer Experience**: Prioritize enhancing the experience for **active members** and **long-tenure customers**. These groups are more likely to remain loyal, so focusing on engagement can further reduce churn.
+
+4. **Product Bundling**: Bundle products to increase **customer value**. Offering multiple products could improve loyalty, particularly among customers with high balance-to-salary ratios.
+
+5. **Financial Incentives**: Offer **discounts**, **rewards**, or **loyalty programs** to retain high-value customers, particularly those with high credit scores or balances.
+
+6. **Customer Segmentation**: Segment customers based on features such as **age**, **tenure**, and **product usage**. By creating targeted retention strategies, you can focus efforts where they are most needed.
