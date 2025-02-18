@@ -18,7 +18,7 @@ The **Random Forest model** achieved an **AUC score of 0.817**, indicating super
   
 - The **Logistic Regression model**, while performing decently with an AUC score of **0.78**, showed more fluctuations in its ROC curve, which suggests greater sensitivity to certain decision thresholds.
 
-- **Hyperparameter Tuning**: During the **Random Search CV** and **Grid Search CV** processes, the Random Forest model was further optimized, which led to improvements in its performance. Random Search CV allowed for broader exploration, identifying promising parameters faster, while Grid Search CV refined the search, exhaustively evaluating all combinations within the hyperparameter grids.
+- **Hyperparameter Tuning**:  Random Search CV allowed for broader exploration, identifying promising parameters faster.
 
 ### Recommendations for Customer Retention:
 
